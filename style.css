@@ -798,6 +798,13 @@ h1, h2, h3, h4 {
     font-size: 1.15rem;
 }
 
+.footer-banner-img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.05));
+    opacity: 0.9;
+}
+
 .contact-card {
     padding: 2.5rem;
 }
