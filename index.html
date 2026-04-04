@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashik Urban Study | MCAP Trivandrum</title>
+    <meta name="description" content="An urban study of Nashik, a digital reveal platform by architecture students from MCAP Trivandrum.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animation Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Nashik Urban <span>Study</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Exhibition</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu" id="mobile-menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-menuBtn">&times;</div>
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About Us</a></li>
+            <li><a href="#projects" class="mobile-link">Exhibition</a></li>
+            <li><a href="#team" class="mobile-link">Team</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content fade-up-element">
+            <h2 class="subtitle">An Urban Study</h2>
+            <h1 class="title">Discovering <br><span class="gradient-text">Nashik.</span></h1>
+            <p class="description">Nashik is a historic city in the state of Maharashtra, situated along the banks of the Godavari River. Known for its deep religious significance, it is one of the key sites of the Kumbh Mela and attracts pilgrims from across the country. The city is also recognized for its growing urban development, pleasant climate, and prominence in India’s wine industry, often referred to as the “Wine Capital of India.”</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">Enter Exhibition</a>
+                <a href="#about" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+
+        <!-- Nashik Images Collage -->
+        <div class="hero-images fade-up-element">
+            <div class="img-wrapper img-1"><img src="nashik-hero-1.jpg" alt="Nashik Panchavati Traditional Temple Architecture"></div>
+            <div class="img-wrapper img-2"><img src="nashik-hero-2.jpg" alt="Devotees at Godavari River"></div>
+            <div class="img-wrapper img-3"><img src="nashik-hero-3.jpg" alt="Kumbh Mela Night Rituals"></div>
+        </div>
+
+        <div class="scroll-indicator">
+            <p>Scroll to explore</p>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header fade-up-element">
+                <span class="eyebrow">The Studio</span>
+                <h2>Who We Are</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid fade-up-element">
+                <div class="about-text">
+                    <p class="lead"><strong>2022-27 Batch of Marian College of Architecture and Planning</strong></p>
+                    <p>Our goal is to understand the city beyond its physical form—exploring its people, culture, and everyday life. Through documentation, mapping, and observation, we seek to capture the stories embedded in its streets and spaces.</p>
+                </div>
+                <div class="about-stats-container glass-card">
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Published Books</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1</h3>
+                        <p>Documentary Film</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Exhibition Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header fade-up-element">
+                <span class="eyebrow">Our Work</span>
+                <h2>The Exhibition</h2>
+                <div class="divider"></div>
+                <p class="section-desc">Dive into our findings presented via multimedia documentary and published architectural books.</p>
+            </div>
+
+            <!-- Documentary Area -->
+            <div class="project-showcase cinematic-card fade-up-element">
+                <div class="project-info">
+                    <h3>Unfolded Stories</h3>
+                    <span class="tag">10 Min Documentary</span>
+                    <p>A cinematic journey through the streets of Nashik, capturing its people, architecture, and the invisible threads that weave the city together. Watch the raw, unedited soul of the urban fabric.</p>
+                </div>
+                <div class="video-container">
+                    <!-- Placeholder video tag - to be replaced with actual raw video file -->
+                    <video id="documentary-video" class="raw-video" controls poster="https://images.unsplash.com/photo-1596414441865-c28ed29cc164?q=80&w=1200&auto=format&fit=crop">
+                        <source src="your-video-file.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- Visual overlay for aesthetic before play -->
+                    <div class="video-overlay" id="video-overlay">
+                        <button class="play-btn" id="play-btn">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Area -->
+            <h3 class="subsection-title fade-up-element">Publications</h3>
+            <div class="books-grid">
+                <!-- Book 1 -->
+                <div class="book-card glass-card fade-up-element">
+                    <div class="book-cover book1">
+                        <div class="cover-overlay">
+                            <a href="book1.pdf" target="_blank" class="btn btn-primary small-btn">View PDF</a>
+                        </div>
+                    </div>
+                    <div class="book-content">
+                        <h4>Urban Typologies of Nashik</h4>
+                        <p>Volume 1 explores structural patterns and spatial analysis of heritage blocks.</p>
+                        <a href="book1.pdf" download class="text-link">Download PDF →</a>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card glass-card fade-up-element">
+                    <div class="book-cover book2">
+                        <div class="cover-overlay">
+                            <a href="book2.pdf" target="_blank" class="btn btn-primary small-btn">View PDF</a>
+                        </div>
+                    </div>
+                    <div class="book-content">
+                        <h4>Beyond Measurements</h4>
+                        <p>Mapping the Ungoogled Nashik.</p>
+                        <a href="book2.pdf" download class="text-link">Download PDF →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header fade-up-element">
+                <span class="eyebrow">Credits</span>
+                <h2>Study Contributors</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="team-grid fade-up-element">
+                <div class="team-list">
+                    <h3>Faculty Coordinators</h3>
+                    <ul>
+                        <li>Ar. Goutham S</li>
+                        <li>Ar. Vivek V</li>
+                        <li>Ar. Sheikh Muhammed Yaseen</li>
+                        <li>Ar. Keerthana S</li>
+                    </ul>
+                    
+                    <h3 style="margin-top: 2rem;">Student Team (2022-27 Batch)</h3>
+                    <div class="student-columns">
+                        <ul>
+                            <li>Abhina S S</li>
+                            <li>Abhinav Krishnan K</li>
+                            <li>Adarsh Krishna K S</li>
+                            <li>Aggatha Lenin N</li>
+                            <li>Alan Jose</li>
+                            <li>Albin Manoj Varghese</li>
+                            <li>Anagha M K</li>
+                            <li>Anila A Anil</li>
+                            <li>Anjali Ann Legi</li>
+                            <li>Anna Andrew</li>
+                            <li>Ansu Ann Benny</li>
+                            <li>Arathi J P</li>
+                            <li>Devika S</li>
+                            <li>Dhanesh Das</li>
+                            <li>Farhan Khan Ks</li>
+                            <li>Femin Juliet Baby</li>
+                            <li>Gayathri K</li>
+                            <li>Gourikrishna S</li>
+                            <li>Gouthami S</li>
+                            <li>Ihsan Ibrahim</li>
+                            <li>Janasree V</li>
+                            <li>Jessiha Praveen P</li>
+                            <li>Jithin S Chandran</li>
+                            <li>Joel Justus</li>
+                            <li>Karthik Prem P B</li>
+                            <li>Lidhya John</li>
+                            <li>Meenakshi S</li>
+                            <li>Muhammed Rizwan</li>
+                            <li>Nimisha S</li>
+                            <li>Praveen P</li>
+                            <li>Praveena Duth C P</li>
+                            <li>Rahul Krishnan B</li>
+                            <li>Reshmi Rama Chandran</li>
+                            <li>Ruben Thomas Reji</li>
+                            <li>Santhra S Shaji</li>
+                            <li>Saravind William</li>
+                            <li>Sereena F</li>
+                            <li>Shemima S</li>
+                            <li>Sidharth Sundeep</li>
+                            <li>Sona Monachen</li>
+                            <li>Sungeeth Geevarghese</li>
+                            <li>Treesa Thomas M</li>
+                            <li>Vaishnavi S Prasad</li>
+                            <li>Varsha S M</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="institution-details glass-card">
+                    <h3>Institution Info</h3>
+                    <p style="color: var(--text-main); font-weight: 700; font-size: 1.2rem;">Marian College of Architecture and Planning</p>
+                    <p class="address" style="margin-bottom: 1.5rem;">
+                        Kazhakkoottam, Trivandrum<br>
+                        Kerala - 695582
+                    </p>
+                    <a href="https://www.mcap.edu.in/" target="_blank" class="btn btn-outline small-btn" style="display: inline-block;">Visit Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content fade-up-element">
+            <div class="footer-title">
+                <h2>Let's Connect</h2>
+                <p>Have questions about our urban study? Reach out to our studio team.</p>
+                <div class="contact-details" style="margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1rem;">
+                    <a href="mailto:mcap27s1a@gmail.com" class="text-link" style="display: flex; align-items: center; gap: 12px; font-size: 1.1rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        mcap27s1a@gmail.com
+                    </a>
+                    <a href="https://instagram.com/mcap.chaos" target="_blank" class="text-link" style="display: flex; align-items: center; gap: 12px; font-size: 1.1rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                        @mcap.chaos
+                    </a>
+                </div>
+            </div>
+            <div class="contact-card glass-card">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Urban Design Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
