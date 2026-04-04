@@ -477,7 +477,6 @@ h1, h2, h3, h4 {
 .about-stats-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 1.5rem;
     padding: 2rem;
 }
@@ -496,6 +495,10 @@ h1, h2, h3, h4 {
 }
 .stat-item:nth-child(2) {
     border-top: 4px solid var(--primary-yellow);
+}
+.stat-item:nth-child(3) {
+    grid-column: span 2;
+    border-top: 4px solid var(--primary-red);
 }
 
 .stat-item h3 {
