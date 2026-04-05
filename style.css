@@ -476,21 +476,7 @@ h1, h2, h3, h4 {
     overflow: hidden;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    padding: 3rem; /* Space for the pattern backdrop */
-    background-color: rgba(255, 255, 255, 0.4); /* Subtle glass effect */
-    border-radius: 20px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-}
-
-.about-grid::before {
+.about-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -502,7 +488,15 @@ h1, h2, h3, h4 {
     background-position: center;
     opacity: 0.2; /* 20% opacity as requested */
     z-index: -1;
-    border-radius: 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .about-text .lead {
