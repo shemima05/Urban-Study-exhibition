@@ -562,6 +562,7 @@ h1, h2, h3, h4 {
     position: relative;
     overflow: hidden;
     width: 100%;
+    border-top: 4px solid var(--primary-yellow); /* Yellow separator as requested */
 }
 
 .projects-section::before {
@@ -574,7 +575,7 @@ h1, h2, h3, h4 {
     background-image: url('exhi-bg.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.15; /* Substantial but subtle */
+    opacity: 0.1; /* Reduced to 10% as requested */
     z-index: -1;
 }
 
