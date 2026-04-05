@@ -285,7 +285,7 @@ h1, h2, h3, h4 {
     align-items: center;
     padding: 100px 5% 0;
     position: relative;
-    max-width: var(--max-width);
+    width: 100%;
     margin: 0 auto;
     overflow: hidden; /* Ensure pseudo-element doesn't spill out */
 }
@@ -474,8 +474,8 @@ h1, h2, h3, h4 {
 .about-section {
     position: relative;
     overflow: hidden;
-    max-width: var(--max-width);
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 .about-section::before {
@@ -744,8 +744,8 @@ h1, h2, h3, h4 {
 .team-section {
     position: relative;
     overflow: hidden;
-    max-width: var(--max-width);
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 .team-grid {
