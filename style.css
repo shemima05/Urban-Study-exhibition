@@ -748,17 +748,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-.team-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 4rem;
-    position: relative; /* Base for pseudo-element */
-    z-index: 1;
-    padding: 2rem; /* Add some space around the content for the pattern */
-    border-radius: 12px;
-}
-
-.team-grid::before {
+.team-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -771,7 +761,14 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     opacity: 0.2; /* 20% opacity */
     z-index: -1;
-    border-radius: 12px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
 }
 
 .team-list h3 {
