@@ -486,7 +486,7 @@ h1, h2, h3, h4 {
     background-image: url('about-bg.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.1; /* Very subtle for readability */
+    opacity: 0.2; /* Increased opacity as requested */
     z-index: -1;
 }
 
