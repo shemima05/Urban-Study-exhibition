@@ -1,16 +1,17 @@
 :root {
-    /* Primary Architecture Palette (Bauhaus/De Stijl Inspired) */
-    --bg-color: #f8f9fa;
+    /* New Organic & Vibrant Palette */
+    --bg-color: #f3e8cc; /* Cream */
     --surface-color: #ffffff;
     
-    /* The requested Red, Blue, Yellow, and Orange */
-    --primary-red: #e63946;
-    --primary-blue: #1d3557;
-    --primary-yellow: #ffb703;
-    --primary-orange: #fb8500;
+    /* The requested Palette Colors */
+    --primary-red: #d52518;    /* Tomato Burst */
+    --primary-blue: #18542a;   /* Forest Green */
+    --primary-yellow: #ffc926; /* Sunshine */
+    --primary-orange: #f96015; /* Crisp Carrot */
+    --primary-kiwi: #9abc05;   /* Kiwi */
     
     --text-main: #111418;
-    --text-muted: #525c6a;
+    --text-muted: #3a414a;
     --border-color: #111418;
     
     /* Typography */
@@ -34,19 +35,13 @@ html {
 
 body {
     background-color: var(--bg-color);
-    background-image: 
-        radial-gradient(at 0% 0%, rgba(230, 57, 70, 0.03) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(29, 53, 87, 0.03) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(255, 183, 3, 0.03) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, rgba(251, 133, 0, 0.03) 0px, transparent 50%),
-        radial-gradient(rgba(29, 53, 87, 0.05) 1px, transparent 1px);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 20px 20px;
     color: var(--text-main);
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
-    min-height: 100vh;
+    background-image: radial-gradient(rgba(29, 53, 87, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 /* Background Elements */
@@ -55,51 +50,30 @@ body {
     border-radius: 50%;
     filter: blur(100px);
     z-index: -1;
-    opacity: 0.25;
-    animation: float 25s infinite ease-in-out alternate;
-    pointer-events: none;
+    opacity: 0.15;
+    animation: float 20s infinite ease-in-out alternate;
 }
 
 .shape-1 {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     background: var(--primary-red);
-    top: -10%;
-    right: -10%;
+    top: -5%;
+    right: -5%;
 }
 
 .shape-2 {
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     background: var(--primary-blue);
-    top: 30%;
-    left: -15%;
+    bottom: 20%;
+    left: -10%;
     animation-delay: -5s;
 }
 
-.shape-3 {
-    width: 550px;
-    height: 550px;
-    background: var(--primary-yellow);
-    bottom: 5%;
-    right: -10%;
-    animation-delay: -10s;
-}
-
-.shape-4 {
-    width: 500px;
-    height: 500px;
-    background: var(--primary-orange);
-    top: 50%;
-    left: 40%;
-    animation-delay: -15s;
-}
-
 @keyframes float {
-    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-    33% { transform: translate(50px, 100px) rotate(10deg) scale(1.1); }
-    66% { transform: translate(-30px, 50px) rotate(-10deg) scale(0.9); }
-    100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(100px, 100px) scale(1.2); }
 }
 
 /* Typography utilities */
@@ -111,8 +85,8 @@ h1, h2, h3, h4 {
 }
 
 .gradient-text {
-    /* Using the primary colors for a vibrant impact */
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-red) 50%, var(--primary-yellow) 100%);
+    /* Using the new vibrant palette for a rich impact */
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-red) 30%, var(--primary-orange) 60%, var(--primary-yellow) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -129,7 +103,7 @@ h1, h2, h3, h4 {
     align-items: center;
     padding: 0 5%;
     z-index: 100;
-    background: rgba(248, 249, 250, 0.85);
+    background: rgba(243, 232, 204, 0.9); /* Matching Cream Var */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 2px solid rgba(17, 20, 24, 0.05);
@@ -579,7 +553,7 @@ h1, h2, h3, h4 {
 .tag {
     display: inline-block;
     padding: 6px 12px;
-    background: rgba(230, 57, 70, 0.1);
+    background: rgba(213, 37, 24, 0.1); /* Matching Tomato Burst */
     border-radius: 4px;
     font-size: 0.85rem;
     margin-bottom: 1.5rem;
