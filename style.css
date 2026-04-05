@@ -476,6 +476,7 @@ h1, h2, h3, h4 {
     overflow: hidden;
     width: 100%;
     margin: 0;
+    border-top: 4px solid var(--primary-red); /* Red separator from Hero */
 }
 
 .about-section::before {
@@ -767,6 +768,7 @@ h1, h2, h3, h4 {
     overflow: hidden;
     width: 100%;
     margin: 0;
+    border-top: 4px solid #f3722c; /* Orange separator from Exhibition */
 }
 
 .team-section::before {
@@ -865,7 +867,7 @@ h1, h2, h3, h4 {
 /* Contact Section */
 .footer {
     padding-top: 100px;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary-blue); /* Blue separator from Team */
     background: var(--surface-color);
 }
 
