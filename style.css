@@ -759,7 +759,7 @@ h1, h2, h3, h4 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.2; /* 20% opacity */
+    opacity: 0.1; /* 10% opacity as requested */
     z-index: -1;
 }
 
