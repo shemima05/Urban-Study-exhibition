@@ -20,42 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => spectator.observe(el));
 
 
-    // --- 2. Navbar Scroll Effect & Loading Transitions ---
-    const loader = document.getElementById('loader');
-    const navLinks = document.querySelectorAll('.nav-links a, .mobile-link');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const href = link.getAttribute('href');
-            if (href.startsWith('#')) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                
-                // Trigger Bauhaus loading effect
-                loader.classList.add('active');
-                
-                setTimeout(() => {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    // Close mobile menu if open
-                    mobileMenu.classList.remove('active');
-                    mobileMenuBtn.classList.remove('open');
-                    
-                    setTimeout(() => {
-                        loader.classList.remove('active');
-                    }, 600);
-                }, 800);
-            }
-        });
-    });
-
+    // --- 2. Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.05)';
+        if (window.scrollY > 80) {
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.background = 'rgba(248, 249, 250, 0.85)';
-            navbar.style.boxShadow = 'none';
+            navbar.classList.remove('scrolled');
         }
     });
 
