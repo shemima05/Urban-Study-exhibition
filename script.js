@@ -23,10 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 2. Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 80) {
-            navbar.classList.add('scrolled');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.05)';
         } else {
-            navbar.classList.remove('scrolled');
+            navbar.style.background = 'rgba(248, 249, 250, 0.85)';
+            navbar.style.boxShadow = 'none';
         }
     });
 
