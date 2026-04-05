@@ -211,6 +211,64 @@ h1, h2, h3, h4 {
     padding: 100px 0;
 }
 
+/* Background Color Assignments */
+.hero {
+    background-color: var(--primary-yellow);
+}
+
+.about-section {
+    background-color: var(--bg-color); /* Cream */
+}
+
+.projects-section {
+    background-color: var(--primary-kiwi);
+}
+
+.team-section {
+    background-color: var(--primary-blue); /* Forest Green */
+    color: #ffffff;
+}
+
+.team-section .section-header h2,
+.team-section .team-list h3,
+.team-section .institution-details h3 {
+    color: var(--primary-yellow);
+}
+
+.team-section .team-list ul li,
+.team-section .institution-details p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.team-section .team-list ul li::before {
+    color: var(--primary-yellow);
+}
+
+.footer {
+    background-color: var(--primary-orange); /* Crisp Carrot */
+    color: #ffffff;
+}
+
+.footer .footer-title h2,
+.footer .contact-details a,
+.footer-bottom p {
+    color: #ffffff;
+}
+
+.footer .footer-title p,
+.footer .contact-details .text-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-banner-img {
+    filter: brightness(0) invert(1); /* Make banner white for orange bg */
+}
+
+/* Background shapes removal as they clash with solid colors */
+.bg-shape {
+    display: none;
+}
+
 .section-header {
     margin-bottom: 3rem;
 }
