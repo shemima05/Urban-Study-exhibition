@@ -744,6 +744,8 @@ h1, h2, h3, h4 {
 .team-section {
     position: relative;
     overflow: hidden;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .team-grid {
