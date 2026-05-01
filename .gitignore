@@ -1,6 +1,12 @@
+# Standard ignores
 .DS_Store
 node_modules/
 dist/
 .env
 .gemini/
 .antigravity/
+
+# Large binary files (too big for GitHub)
+*.pdf
+*.mp4
+*.xlsx
